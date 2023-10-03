@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Apply a background color to the entire page */
+body {
+    background-color: #e2c7aa; /* Set your desired background color */
+    font-family: Arial, sans-serif;
+}
+/* Basic styling for the header */
+header {
+    background-color: #bd0f4c;
+    color: white;
+    /* text-align: center; */
+    padding: 20px 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding: 5px;
+}
+.main div{
+
+    margin: 8px;
+    flex-basis: calc(25% - 20px); /* Create 4 equal-width blocks with margin */
+}
+nav li {
+    margin: 10px;
+    flex-basis: calc(25% - 20px); /* Create 4 equal-width blocks with margin */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 20px 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* Add transform transition */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #bd5529;
+    color: white;
+    padding: 25px;
+    transform: scale(1.1); /* Scale the specific list item on hover */
+    
+}
+.fa-brands, .fab {
+    font-weight: 400;
+    margin-right: 10px !important;
+}
+.fa-solid, .fas {
+    margin-right: 10px !important;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        flex-basis: calc(50% - 20px); /* Two blocks per row on smaller screens */
+    }
+}
